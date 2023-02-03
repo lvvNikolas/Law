@@ -52,6 +52,7 @@
 .contacts__item a{
     color: var(--font_color);
     font-weight: 600;
+    overflow-wrap: break-word;
  
 }
 .contacst__messangers {

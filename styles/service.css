@@ -17,6 +17,7 @@
     width: calc(50% - 80px);
     text-align: right;
     transition: opacity 0.1s;
+    min-height: 250px;
 }
 .service-order__item:nth-of-type(2){
     align-self: flex-end;

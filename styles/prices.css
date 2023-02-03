@@ -1,0 +1,14 @@
+.prices {
+}
+.container {
+}
+.prices__body {
+}
+.prices__line {
+    margin-top: 30px;
+}
+.prices__text{
+    color: var(--font_color);
+    /* font-weight: 600; */
+    font-size: 30px;
+}

@@ -9,6 +9,7 @@
     margin: 7.5px;
     text-align: center;
     padding: 20px;
+    flex: 1 1 300px
 }
 
 .labor__p{
@@ -38,5 +39,11 @@
     .labor__item{
         margin-left: 0;
         margin-right: 0;
+    }
+}
+
+@media (max-width:500px) {
+    .labor__h2{
+        font-size: 30px;
     }
 }

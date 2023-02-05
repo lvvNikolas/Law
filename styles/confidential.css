@@ -1,0 +1,48 @@
+.conf__container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.conf__back {
+    padding:10px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: var(--accent_color);
+    width: fit-content;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.conf__list{
+    padding-left: 15px;
+    color: var(--font_color);
+    margin-bottom: 15px;
+}
+.conf__title {
+    color: var(--font_color);
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.conf__sub-title {
+    color: var(--font_color);
+    margin-bottom: 15px;
+}
+.conf__text {
+    color: var(--font_color);
+    margin-bottom: 15px;
+}
+.divider{
+    display: none;
+}
+@media (max-width:400px) {
+    .conf__title {
+        font-size: 20px;
+    }
+    .conf__sub-title {
+        font-size: 16px;
+    }
+    .conf__text {
+        font-size: 16px;
+    }
+}

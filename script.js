@@ -16,13 +16,15 @@ const loader = document.querySelector('.form__loader')
 //Init functions
 checkboxesHeight()
 checkBoxOpacity()
-textSpitter()
+textSpitter('.practice__grid-title','.grid-title__wrapper')
+textSpitter('.labor__h2','.labor__h2-title')
 practiceMobileHandler()
 checkBoxes.forEach(e => e.addEventListener('click', checkBoxOpacity))
 
 window.addEventListener('resize', (e) => {
     checkboxesHeight()
-    textSpitter()
+    textSpitter('.practice__grid-title','.grid-title__wrapper')
+    textSpitter('.labor__h2','.labor__h2-title')
     practiceMobileHandler()
 })
 
@@ -56,15 +58,15 @@ function checkboxesHeight() {
 }
 
 //Функция для переноса текста в карточках, когда не хватает места тексту
-function textSpitter() {
-    const containers = document.querySelectorAll('.practice__grid-title')
+function textSpitter(className, elementClassName) {
+    const containers = document.querySelectorAll(className)
     containers.forEach((e, i) => {
-        const wrapper = e.querySelector('.grid-title__wrapper')   
+        const wrapper = e.querySelector(elementClassName)   
         const splitters = e.querySelectorAll('.splitter')
         splitters.forEach((item, j) => {
             item.innerHTML = ''
         })
-        if (wrapper.offsetWidth > e.offsetWidth) {
+        if (wrapper?.offsetWidth > e.offsetWidth) {
             splitters.forEach((item, j) => {
                 item.innerHTML = '-<br>'
             })

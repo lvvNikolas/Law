@@ -58,17 +58,19 @@
 .contacst__messangers {
     display: flex;
     flex-direction: column;
+   
 }
 .contacst__messanger-item {
     display: flex;
     align-items: center;
     margin-right: 30px;
     color: var(--font_color);
+    margin-bottom: 15px;
 }
 .contacst__messanger-item h3{
    margin-bottom: 0;
    margin-left: 15px;
-   margin-bottom: 15px;
+   font-size: 20px;
 }
 
 @media (max-width:1100px) {
